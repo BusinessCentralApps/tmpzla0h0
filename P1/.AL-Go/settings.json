@@ -1,6 +1,6 @@
 {
-  "bcptTestFolders": [],
   "$schema": "https://raw.githubusercontent.com/microsoft/AL-Go/Actions/646f103480ad85b9a8638587c497b1448472b8ad/.Modules/settings.schema.json",
+  "bcptTestFolders": [],
   "country": "w1",
   "testFolders": [],
   "appFolders": []
