@@ -1,0 +1,28 @@
+{
+  "useApproximateVersion": true,
+  "githubRunnerShell": "powershell",
+  "templateUrl": "https://github.com/businesscentralapps/tmpaTN1kR-PTE@main",
+  "UseProjectDependencies": true,
+  "doNotPublishApps": true,
+  "useCompilerFolder": true,
+  "$schema": "https://raw.githubusercontent.com/microsoft/AL-Go/Actions/646f103480ad85b9a8638587c497b1448472b8ad/.Modules/settings.schema.json",
+  "githubRunner": "windows-latest",
+  "conditionalSettings": [
+    {
+      "workflows": [
+        "CI/CD"
+      ],
+      "settings": {
+        "workflowConcurrency": [
+          "group: ${{ github.workflow }}-${{ github.ref }}",
+          "cancel-in-progress: true"
+        ]
+      }
+    }
+  ],
+  "type": "PTE",
+  "MicrosoftTelemetryConnectionString": "",
+  "incrementalBuilds": {
+    "onPush": true
+  }
+}
